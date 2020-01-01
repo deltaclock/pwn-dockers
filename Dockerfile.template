@@ -1,10 +1,10 @@
-FROM python:${version}
+FROM python:${pyver}
 
 LABEL maintainer="deltaclock@pm.me"
 
 RUN pip install --upgrade pip
 
-RUN pip install pwntools==${stable}
+RUN pip install pwntools==${pwnver}
 
 WORKDIR /app
 
