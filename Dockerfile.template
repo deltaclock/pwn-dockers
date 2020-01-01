@@ -1,0 +1,12 @@
+FROM python:${version}
+
+LABEL maintainer="deltaclock@pm.me"
+
+RUN pip install --upgrade pip
+
+RUN pip install pwntools==${stable}
+
+WORKDIR /app
+
+CMD [ "/bin/bash" ]
+
