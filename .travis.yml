@@ -5,5 +5,4 @@ services: docker
 jobs:
   include:
     - stage: build
-    script:
-    - docker images
+    script: docker images
