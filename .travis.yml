@@ -1,5 +1,6 @@
 dist: bionic
 language: minimal
+services: docker
 
 jobs:
     include:
