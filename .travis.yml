@@ -2,7 +2,7 @@ dist: bionic
 
 jobs:
     include:
-      - stage: build docker images
+    - stage: build docker images
         script:
             - docker build -t deltaclock/pwntools:2 py2/
             - docker build -t deltaclock/pwntools:3 py3/
