@@ -4,12 +4,18 @@ services: docker
 
 jobs:
     include:
-    - stage: build docker images
-    script:
+        - stage: build
+        script:
+        - docker images
+
+# jobs:
+#     include:
+#     - stage: build docker images
+#     script:
     # - docker build -t deltaclock/pwntools:2 py2/
     # - docker build -t deltaclock/pwntools:3 py3/
     # - docker build -t deltaclock/pwntools py3/
-    - docker images
+    # - docker images
     # - stage: deploy
     # script:
     # - echo "$DOCKER_TOKEN" | docker login -u "deltaclock" --password-stdin
