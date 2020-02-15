@@ -10,9 +10,9 @@ jobs:
     - docker build -t deltaclock/pwntools:3 py3/
     - docker build -t deltaclock/pwntools py3/
     - docker images
-    - stage: deploy
-    script:
-    - echo "$DOCKER_TOKEN" | docker login -u "deltaclock" --password-stdin
-    - docker push deltaclock/pwntools:2
-    - docker push deltaclock/pwntools:3
-    - docker push deltaclock/pwntools
+    # - stage: deploy
+    # script:
+    # - echo "$DOCKER_TOKEN" | docker login -u "deltaclock" --password-stdin
+    # - docker push deltaclock/pwntools:2
+    # - docker push deltaclock/pwntools:3
+    # - docker push deltaclock/pwntools
