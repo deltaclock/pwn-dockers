@@ -8,5 +8,7 @@ jobs:
     - stage: build docker image
       script:
       - docker images
-    - stage: test
-      script: docker run --rm $DOCKER_USERNAME/travis-ci-build-stages-demo cat hello.txt
+      - echo yes
+    - stage: deploy
+      script:
+      - echo deploy
