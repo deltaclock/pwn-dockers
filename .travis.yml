@@ -2,9 +2,11 @@ dist: bionic
 language: minimal
 services: docker
 
+
 jobs:
   include:
-    - script: echo "Running unit tests (1)"
-    - script: echo "Running unit tests (2)"
-    - stage: GitHub Release
-      script: echo "Deploying to GitHub releases ..."
+    - stage: build docker image
+      script:
+      - docker images
+    - stage: test
+      script: docker run --rm $DOCKER_USERNAME/travis-ci-build-stages-demo cat hello.txt
