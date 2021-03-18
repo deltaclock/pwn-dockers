@@ -1,4 +1,7 @@
 # pwn-dockers
+
+**Moved here https://github.com/deltaclock/ctf-dockers**
+
 Build scripts for pwntools docker.
 Those are run weekly to provide the latest pwntools for python3/2
 
